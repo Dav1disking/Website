@@ -1,137 +1,99 @@
 #background-gradient {
-    background: linear-gradient(#bde0fe, #a6e9c0a8);
+  background: linear-gradient(#bde0fe, #a6e9c0a8);
 
-    height: 95vh;
+  height: 95vh;
 }
 
 nav {
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; */
-
-    background-color: white;
-    
-    width: 100%;
-
-    margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
 }
 
 #nav-div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    align-self: center;
-    justify-self: center;
-    
-    justify-content:space-between;
-
-    width: 90%;
-
-    position: relative;
-
-    padding: 12px 0 ;
-
-    margin-bottom: 40px;
-
-    position: fixed;
-
-    top: 0;
+  width: 90%;
+  margin: 0 auto;
+  padding: 18px 0;
 }
 
 #navLogo {
-    font-size: 20px;
-    font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 #navMenu {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    list-style: none;
-    
+  list-style: none;
 
-    color: black;
+  color: black;
 
-    gap: 20px;
+  gap: 20px;
 }
 
-
 #navToggle {
-    display: none;
- }
+  display: none;
+  cursor: pointer;
+}
 
 #get-started-btn {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
-    gap: 10px;
+  gap: 10px;
 }
 
 #arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    border: none;
+  border: none;
 }
 
 @media (max-width: 900px) {
-    #navMenu {
-        display: none;
-    }
+  #navMenu.open {
+    display: flex;
+  }
+  #navMenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: rgb(249, 249, 249);
+    opacity: 95%;
+    border-radius: 5px;
+    gap: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
 
-    #navMenu {
+  .nav-menu.open {
+    display: flex;
+    background-color: #ffffff;
+  }
 
-        flex-direction: column;
-        position: absolute;
+  .nav-menu a {
+    display: block;
+    padding: 14px 24px;
+  }
 
-        top: 60px;
-        left: 0;
-        right: 0;
-
-        background-color: rgb(249, 249, 249);   
-
-        opacity: 95%;
-
-        border-radius: 5px;
-        
-        gap: 0;
-
-        padding: 10px 0;
-
-        text-align: center;
-    }
-    
-    .nav-menu.open {
-        display: flex;
-        background-color: #ffffff;
-    }
-
-    .nav-menu a {
-        display: block;
-        padding: 14px 24px;
-    }
-
-
-    #navToggle {
-        display: flex;
-
-        border: none;
-        background-color: transparent;
-
-    }
-
-    #get-started-btn {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        gap: 10px;
-    }
-    
+  #navToggle {
+    display: flex;
+    border: none;
+    background-color: transparent;
+  }
 }

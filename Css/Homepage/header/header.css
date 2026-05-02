@@ -1,5 +1,5 @@
 #background-gradient {
-  background: linear-gradient(#bde0fe, #a6e9c0a8);
+  background: linear-gradient(#bddefa, #a6e9c0a8);
 
   height: 95vh;
 }
@@ -10,8 +10,22 @@ nav {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: white;
+
+  background-color: transparent;
+
+  transition: 1500ms;
 }
+
+nav.scrolled {
+  top: 10px;
+  left: 30%;
+  width: 40%;
+
+  border-radius: 100px;
+
+  background-color: rgba(240, 240, 240, 0.945);
+}
+
 
 #nav-div {
   position: relative;
@@ -25,8 +39,16 @@ nav {
 }
 
 #navLogo {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
+
+  transition: 500ms;
+
+  cursor: default;
+}
+
+#navLogo:hover {
+  color: #61c0b5;
 }
 
 #navMenu {
@@ -96,4 +118,19 @@ nav {
     border: none;
     background-color: transparent;
   }
+}
+
+@media (max-width: 1500px) {
+    
+  #nav-div {
+    width: none;
+  }
+
+  nav.scrolled {
+  
+    left: 15%;
+    width: 70%;
+
+  }
+
 }

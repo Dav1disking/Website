@@ -3,14 +3,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     text-align: center;
+
     gap: 30px;
-    padding: 100px 0;
+
+    margin-bottom: 70px;
+
+    padding: 50px 0;
 }
 
 #main-container-div-header {
     font-size: 65px;
     font-weight: 300;
+    
     font-family: none;
 }
 
@@ -29,7 +35,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
     text-align: center;
+
     gap: 20px;
 }
 
@@ -38,16 +46,21 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
     background-color: black;
     color: white;
+
     padding: 10px;
+
     gap: 10px;
+
     cursor: pointer;
 }
 
 .air {
     width: 4px;
     height: 4px;
+
     background-color: white;
 }
 
@@ -56,24 +69,49 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     justify-self: center;
     align-self: center;
+
     width: 45%;
+
+    /* background-color: #fcfcfc; */
+
     background-color: #e4e8ea;
 }
+
+/* #container-div-2 {
+    display: flex;
+    flex-direction: row; 
+    align-content: center;
+    justify-content: center;
+
+    padding: 5px;
+    border-radius: 2px;
+
+    background-color: #ffffff;
+
+    gap: 50px;
+
+} */
 
 #image-1 {
     display: flex;
     align-self: center;
     justify-content: center;
+
     margin: 0 auto;
+    
 }
 
 #image-1 img {
     width: 70%;
-    border-radius: 50px;
+
+    border-radius: 20px;
+
     transition: 2000ms;
 }
+
 
 @media (max-width: 725px) {
     #main-cotainer-div-btn {
